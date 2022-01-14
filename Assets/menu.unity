@@ -497,7 +497,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 662034251}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1873443859}
+        m_MethodName: QuitMaze
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &662034251
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -789,7 +800,29 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 872278911}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1453943036}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1873443857}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &872278911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -988,7 +1021,6 @@ GameObject:
   - component: {fileID: 1202416933}
   - component: {fileID: 1202416932}
   - component: {fileID: 1202416931}
-  - component: {fileID: 1202416934}
   m_Layer: 5
   m_Name: PlayButton
   m_TagString: Untagged
@@ -1055,7 +1087,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1202416932}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1873443859}
+        m_MethodName: PlayMaze
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1202416932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1091,27 +1134,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1202416929}
   m_CullTransparentMesh: 0
---- !u!114 &1202416934
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1202416929}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f199c7a43b50cfc4ab9affa8e2791f7a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playMaze: {fileID: 1202416931}
-  quitMaze: {fileID: 662034250}
-  optionMaze: {fileID: 872278910}
-  mainMenu: {fileID: 1873443857}
-  optionMenu: {fileID: 1453943036}
-  backButton: {fileID: 1905100577}
-  trapMat: {fileID: 2100000, guid: 472f978870a6ae74d8d6908d81e6252c, type: 2}
-  goalMat: {fileID: 2100000, guid: 0bb7bb80325eff2429b4ca45ea8622b8, type: 2}
-  colorblindMode: {fileID: 125497232}
 --- !u!1 &1212015951
 GameObject:
   m_ObjectHideFlags: 0
@@ -1384,6 +1406,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1873443858}
+  - component: {fileID: 1873443859}
   m_Layer: 5
   m_Name: MainMenu
   m_TagString: Untagged
@@ -1413,6 +1436,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 250, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1873443859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873443857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f199c7a43b50cfc4ab9affa8e2791f7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trapMat: {fileID: 2100000, guid: 472f978870a6ae74d8d6908d81e6252c, type: 2}
+  goalMat: {fileID: 2100000, guid: 0bb7bb80325eff2429b4ca45ea8622b8, type: 2}
+  colorblindMode: {fileID: 125497232}
 --- !u!1 &1888973249
 GameObject:
   m_ObjectHideFlags: 0
@@ -1563,7 +1601,29 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1905100578}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1873443857}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1453943036}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1905100578
 MonoBehaviour:
   m_ObjectHideFlags: 0
