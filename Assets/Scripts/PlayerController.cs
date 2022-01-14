@@ -73,7 +73,7 @@ public class PlayerController : MonoBehaviour
         {
             this.score += 1;
             SetScoreText();
-            DestroyObject(other.gameObject, 0.2f);
+            Destroy(other.gameObject, 0.2f);
         }
         // rest health when pass through a trap
         if (other.tag == "Trap")

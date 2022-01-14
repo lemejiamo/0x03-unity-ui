@@ -4,13 +4,6 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    // optional way to add onclic() event
-    //public Button playMaze;
-    //public Button quitMaze;
-    //public Button optionMaze;
-    //public Button backButton;
-    //public GameObject mainMenu;
-    //public GameObject optionMenu;
 
     public Material trapMat;
     public Material goalMat;
@@ -19,11 +12,7 @@ public class MainMenu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // optional way to launch 
-        //playMaze.onClick.AddListener(PlayMaze);
-        //quitMaze.onClick.AddListener(QuitMaze);
-        //optionMaze.onClick.AddListener(OptionsMaze);
-        //backButton.onClick.AddListener(BackMenu);
+
     }
 
     // Update is called once per frame
@@ -52,19 +41,6 @@ public class MainMenu : MonoBehaviour
         trapMat.color = trap;
         goalMat.color = goal;
     }
-
-
-    /*public void OptionsMaze()
-    {
-        mainMenu.SetActive(false);
-        optionMenu.SetActive(true);
-    }*/
-
-    /*public void BackMenu()
-    {
-        mainMenu.SetActive(true);
-        optionMenu.SetActive(false);
-    }*/
 
     public void QuitMaze()
     {
